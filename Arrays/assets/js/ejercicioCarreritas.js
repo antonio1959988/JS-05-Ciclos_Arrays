@@ -44,9 +44,12 @@ console.log("PERO QUE ESTA PASANDO AQUI DR. GARCIA!, tenemos a un nuevo integant
 
 //Quinto lugar es reemplazado por Jose
 carrera[4] = "Jose";
-console.log("Marcador Final: ", carrera);
+console.log("Marcador Final:");
 
-
+//Foreach que recorre array para mostrar posiciones
+carrera.forEach(function(corredor, indice, array) {
+    array[indice] = console.log("Posicion", (indice + 1), corredor);
+});
 
 
 
